@@ -9,7 +9,6 @@ function App() {
   let img = "";
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
-
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=e0d8abb20e9b0b2f8a7bb365a8910b0d`;
 
   const searchLocation = (event) => {
@@ -25,7 +24,6 @@ function App() {
     img = img3;
     console.log(img);
   }, []);
-
   return (
     <div
       className="app"
